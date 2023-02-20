@@ -27,7 +27,6 @@ import org.springframework.web.bind.annotation.RestController;
 @CrossOrigin(origins = "https://frontendlmp1.web.app")
 @RequestMapping("/skill")
 public class CHys {
-
     @Autowired
     Shys shys;
 
