@@ -2,34 +2,24 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.portfolio.lmp.Entity;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+package com.portfolio.lmp.Dto;
 
-@Entity
-public class habilidades {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+import jakarta.validation.constraints.NotBlank;
+
+
+
+public class dtoHys {
+    @NotBlank
     private String nombre;
+    @NotBlank
     private int porcentaje;
 
-    public habilidades() {
+    public dtoHys() {
     }
 
-    public habilidades(String nombre, int porcentaje) {
+    public dtoHys(String nombre, int porcentaje) {
         this.nombre = nombre;
         this.porcentaje = porcentaje;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public String getNombre() {
@@ -47,7 +37,6 @@ public class habilidades {
     public void setPorcentaje(int porcentaje) {
         this.porcentaje = porcentaje;
     }
-    
     
     
 }
