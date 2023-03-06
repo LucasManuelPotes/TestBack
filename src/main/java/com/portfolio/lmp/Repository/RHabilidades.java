@@ -4,15 +4,16 @@
  */
 package com.portfolio.lmp.Repository;
 
-import com.portfolio.lmp.Entity.hys;
+
+import com.portfolio.lmp.Entity.habilidades;
 import java.util.Optional;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-/**
- *
- * @author Usuario
- */
-public interface Rhys extends JpaRepository<hys, Integer>{
-    Optional<hys> findByNombre(String nombre);
+
+public interface RHabilidades extends JpaRepository<habilidades, Integer>{
+    
+    Optional<habilidades> findByNombre(String nombre);
     public boolean existsByNombre(String nombre);
+    
+    
 }

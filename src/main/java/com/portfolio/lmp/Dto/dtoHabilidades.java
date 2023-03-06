@@ -6,16 +6,17 @@ package com.portfolio.lmp.Dto;
 
 import jakarta.validation.constraints.NotBlank;
 
-public class dtoHys {
+
+public class dtoHabilidades {
     @NotBlank
     private String nombre;
     @NotBlank
     private int porcentaje;
 
-    public dtoHys() {
+    public dtoHabilidades() {
     }
 
-    public dtoHys(String nombre, int porcentaje) {
+    public dtoHabilidades(String nombre, int porcentaje) {
         this.nombre = nombre;
         this.porcentaje = porcentaje;
     }

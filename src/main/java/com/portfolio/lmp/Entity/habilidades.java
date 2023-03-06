@@ -3,24 +3,23 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package com.portfolio.lmp.Entity;
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
-public class hys {
+public class habilidades {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String nombre;
     private int porcentaje;
 
-    public hys() {
+    public habilidades() {
     }
 
-    public hys(String nombre, int porcentaje) {
+    public habilidades(String nombre, int porcentaje) {
         this.nombre = nombre;
         this.porcentaje = porcentaje;
     }
@@ -48,7 +47,6 @@ public class hys {
     public void setPorcentaje(int porcentaje) {
         this.porcentaje = porcentaje;
     }
-
     
     
     
